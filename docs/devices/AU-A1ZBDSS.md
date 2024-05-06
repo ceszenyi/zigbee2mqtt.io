@@ -30,6 +30,13 @@ pageClass: device-page
 
 ## OTA updates
 This device supports OTA updates, for more information see [OTA updates](../guide/usage/ota_updates.md).
+OTA update fails on this device (ota: timeout, device did not request any image blocks) https://github.com/Koenkk/zigbee2mqtt/issues/20221
+The only option is to remove the anoying update message to remove the section from state.json file:
+( "update": {
+            "state": "available",
+            "installed_version": 20,
+            "latest_version": 22
+        },)
 
 
 ## Options
